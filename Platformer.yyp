@@ -1,7 +1,10 @@
 {
   "resources": [
+    {"id":{"name":"spr_materials","path":"sprites/spr_materials/spr_materials.yy",},"order":3,},
     {"id":{"name":"obj_ground","path":"objects/obj_ground/obj_ground.yy",},"order":1,},
+    {"id":{"name":"obj_materials","path":"objects/obj_materials/obj_materials.yy",},"order":5,},
     {"id":{"name":"obj_square","path":"objects/obj_square/obj_square.yy",},"order":0,},
+    {"id":{"name":"ground_spawn","path":"objects/ground_spawn/ground_spawn.yy",},"order":4,},
     {"id":{"name":"obj_gradient","path":"objects/obj_gradient/obj_gradient.yy",},"order":2,},
     {"id":{"name":"spr_square","path":"sprites/spr_square/spr_square.yy",},"order":0,},
     {"id":{"name":"spr_bg","path":"sprites/spr_bg/spr_bg.yy",},"order":2,},
