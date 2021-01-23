@@ -21,7 +21,7 @@ if camera_x < room_width - half_camera_width*2 || x < camera_x + half_camera_wid
 camera_x = camera_get_view_x(view_camera[0]);
 camera_y = camera_get_view_y(view_camera[0]);
 
-if camera_y < room_height - half_camera_height*2 || y < camera_y + half_camera_height {
+if camera_y < room_height - half_camera_height*2|| y < camera_y + half_camera_height {
 	//Bottom side camera stop
 	if camera_y > 0 || y > half_camera_height {
 		//Left side camera stop
