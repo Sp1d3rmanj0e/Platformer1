@@ -1,4 +1,4 @@
 /// @description Life loss
-if (place_meeting(x,y,obj_crosshair)) { //doublechecking for held
+if (mouse_check_button(mb_left)) && (level_req <= obj_pickaxe.level) {
 	life--;
 }

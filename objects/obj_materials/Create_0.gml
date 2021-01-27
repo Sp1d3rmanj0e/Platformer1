@@ -8,7 +8,7 @@
  k = 0;
  life = 1;
  level_req = 1;
- mine_speed = room_speed/2;
+ shade = 0;
  
 #region assign blockstates [high,low,spawn-chance,image_index, LIVES,  Min level req]
 //sort from highest spawn chance to lowest (Make code for it later?)
@@ -23,19 +23,25 @@ block[1,0] = 1; //Dirt
 	 block[1,2] = 100;
 	 block[1,3] = 1;
 	 block[1,4] = 2;
-	 block[1,5] = 1
+	 block[1,5] = 1;
 block[2,0] = 4; //Stone
 	 block[2,1] = 7;
 	 block[2,2] = 100;
 	 block[2,3] = 2;
-	 block[2,4] = 3
-	 block[2,5] = 1
+	 block[2,4] = 3;
+	 block[2,5] = 1;
 block[3,0] = 5; //Copper
 	block[3,1] = 7;
 	block[3,2] = 10;
 	block[3,3] = 3;
 	block[3,4] = 5;
 	block[3,5] = 2;
+block[4,0] = 4; //Iron
+	block[4,1] = 7;
+	block[4,2] = 15;
+	block[4,3] = 4;
+	block[4,4] = 4;
+	block[4,5] = 1;
 #endregion
 
 //layer name

@@ -1,7 +1,5 @@
 /// @description Initialization
-direction = 0;
 
-//make these arrays later maybe
-durability = 100;
-damage = 1;
+image_speed = 0;
+mine_speed = room_speed/2;
 level = 1;

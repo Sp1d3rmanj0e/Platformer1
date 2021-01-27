@@ -1,36 +1,13 @@
-/// @description Steplike things
-
-//movement
-x = obj_square.phy_position_x
-y = obj_square.phy_position_y
-
-switch (keyboard_key) { //Mining commands
-	case (vk_down):
-		image_index = 1;
-	break;
-	case (vk_up): 
-		image_index = 2;
-	break;
-	case (vk_right):
-		image_index = 3;
-	break;
-	case (vk_left):
-		image_index = 4;
-	break;
-	default:
-		image_index = 0;
-	
+/// @description
+if (instance_exists(obj_pickaxe)) {
+	x = obj_square.x
+	y = obj_square.y
 }
+image_angle = point_direction(x,y,mouse_x,mouse_y);
 
-if (image_index = 0) {
-	if (keyboard_check(ord("D"))) {
-		image_xscale = -1;
-	}
+if (mouse_check_button(mb_left)) {
+	image_speed = 1;
 } else {
-	image_xscale = 1	
+	image_speed = 0;
+	image_index = 0;
 }
-
-//if (durability < 1) {     Use this code later
-//	//maybe add function here
-//	instance_destroy();	
-//}
