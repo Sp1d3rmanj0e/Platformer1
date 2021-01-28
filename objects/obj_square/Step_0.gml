@@ -7,7 +7,7 @@ if (phy_linear_velocity_y <= 0) {
 	if (keyboard_check(ord("D"))) && (!place_meeting(xx+1,yy,grounds)) xx += 2;
 	if (keyboard_check(ord("A"))) && (!place_meeting(xx-1,yy,grounds)) xx -= 2;
 }
-if (keyboard_check(ord("S"))) yy += 5;
+	if (keyboard_check(ord("S"))) yy += 5;
 #region jumping
 //if (keyboard_check_pressed(ord("W"))) && (jumps > 0) && (vel_y == 0){
 //	physics_apply_impulse(xx,yy,0,-5);
