@@ -20,7 +20,13 @@ if (image_blend = make_color_rgb(119,136,153)) && (mouse_check_button(mb_left)) 
 
 //Check if life is left
 if (life < 1) { //mined
-	//collection code
-	scr_blocks(1,image_index)
+	
+	//itemName = 0
+	//amount = 1
+	//description = 2
+	//sprite = 3
+	//newScript = 4
+	
+	scr_additem(playerInventory,itemName,amount,description,sprite,newScript);
 	instance_destroy();
 }

@@ -1,4 +1,5 @@
-/// @description
-x = -416;
-y = 96;
-inventory = false;
+/// @description Setting Up Variables
+
+globalvar playerInventory,playerInventoryWidth;
+playerInventoryWidth = 5;
+playerInventory = ds_grid_create(playerInventoryWidth,1);

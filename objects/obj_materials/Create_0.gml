@@ -1,6 +1,9 @@
 /// @description Spawning
- randomize(); //New gen every time
- 
+//itemName = undefined; //0
+//amount = undefined; //1
+//description = undefined; //2
+//sprite = undefined; //3
+//newScript = undefined; //4
  image_speed = 0; //No natural animation
  #region save if needed
 // blockChoice = 0; //default
@@ -81,4 +84,10 @@
 
 // image_index = blockChoice; //set type
 #endregion
-image_index = scr_blocks(0);
+scr_blocks();
+image_index = blockChoice;
+itemName = name; //0
+amount = drop_quantity; //1
+description = desc; //2
+sprite = image_index; //3
+newScript = undefined; //4
