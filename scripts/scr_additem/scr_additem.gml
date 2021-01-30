@@ -27,6 +27,7 @@ completed = false;
 			ds_grid_set(grid,3,newItemSpot,sprite);
 			ds_grid_set(grid,4,newItemSpot,newScript);
 			return true;
+			completed = true;
 			//inventoryEndAt = ds_grid_height(grid);
 		}
 	}

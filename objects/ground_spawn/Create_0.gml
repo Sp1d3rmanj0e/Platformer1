@@ -1,5 +1,5 @@
 /// @description Initialization and spawning
-
+globalvar deepest;
 x = 16;
 y = 144;
 

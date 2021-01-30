@@ -1,6 +1,6 @@
 /// @description Spawning
 repeat(10) {
-	if (y < alt(15)) {
+	if (y < alt(deepest)) {
 		instance_create_layer(x,y,"Blocks",obj_materials);
 	
 		if (x < 1360) {

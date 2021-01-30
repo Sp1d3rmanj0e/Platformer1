@@ -10,11 +10,12 @@ function scr_blocks() {
 		 level_req = 1;
 		 shade = 0;
 		 max_stack = 1;
+		 deepest = 1;
 	#endregion
 	#region assign blockstates [high,low,spawn-chance,image_index, LIVES,  Min level req, max Stack, Drop, Name, Desc]
 		//sort from highest spawn chance to lowest (Make code for it later?)
 		block[0][0] = 1; //Null Block
-			block[0][1] = 10000;
+			block[0][1] = 50;
 			block[0][2] = 100;
 			block[0][3] = 0;
 			block[0][4] = infinity;
@@ -42,7 +43,7 @@ function scr_blocks() {
 			 block[2][6] = 100;
 			 block[2][7] = 1;
 			 block[2][8] = "Stone";
-			 block[2][9] = "Hard as a rock.. Oh right, this is a rock";
+			 block[2][9] = "Probably a rock";
 		block[3][0] = 5; //Copper
 			block[3][1] = 7;
 			block[3][2] = 10;
@@ -79,6 +80,7 @@ function scr_blocks() {
 				blkche[k][7] = block[i][9]; //save Description
 				k++;
 			}
+			if (block[i][1] > deepest) deepest = block[i][1]; //mark down the deepest elevation
 		 }
 		for (l = 0; l < array_length(blkche); l++) { //Chance Selection
 			if (blkche[l][1] >= irandom(99)) {
@@ -88,7 +90,7 @@ function scr_blocks() {
 				max_stack = blkche[l][4];
 				drop_quantity = blkche[l][5];
 				name = blkche[l][6];
-				desc = blkche[l][6];
+				desc = blkche[l][7];
 			}
 		}
 } //end function

@@ -26,7 +26,6 @@ if (life < 1) { //mined
 	//description = 2
 	//sprite = 3
 	//newScript = 4
-	
 	scr_additem(playerInventory,itemName,amount,description,sprite,newScript);
 	instance_destroy();
 }

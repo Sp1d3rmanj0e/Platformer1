@@ -11,8 +11,24 @@ itemLeftStart = bbox_left + 120;
 itemTopStart = bbox_top + 48;
 
 for (i = 1;i < inventoryEndAt;i++) {
-	draw_text(itemLeftStart,itemTopStart+(i*16)-16,ds_grid_get(myItems,0,i));
+	inventoryOnScreen = i;
+	if (ds_grid_height(playerInventory) >= 2) {
+		if (i <= ds_grid_height(playerInventory)-1) {
+			draw_text(itemLeftStart - 55,itemTopStart+(i*20)-16,ds_grid_get(myItems,0,i + scrolledAmount)); //Name
+			draw_text(itemLeftStart,itemTopStart+(i*20)-16,ds_grid_get(myItems,1,i + scrolledAmount)); //Amount
+			draw_sprite(spr_materials,ds_grid_get(myItems,3,i + scrolledAmount),bbox_left + 40,itemTopStart + (i * 20) - 5); //Image
+			//draw_text(itemLeftStart + 50,itemTopStart+(i*20)-16,itemSelected); //for testing scroll
+		}
+	}
 }
-for (i = 1;i < inventoryEndAt;i++) {
-	draw_text(itemLeftStart + 50,itemTopStart+(i*16)-16,ds_grid_get(myItems,1,i));
+if (ds_grid_height(myItems) > 1) {
+	draw_sprite(spr_outline,0,bbox_left + textBorder + 1.5,itemTopStart + ((itemSelected - scrolledAmount) * 20) + 3); //draws outline
+}
+
+if (ds_grid_get(myItems,2,itemSelected+1) != undefined) {
+	draw_text(itemLeftStart - 100,itemTopStart - 20, ds_grid_get(myItems,2,itemSelected+1));
+} else {
+	draw_text(itemLeftStart - 100,itemTopStart - 20, emptyMessage);
+	instance_destroy(obj_trashButton);
+	instance_destroy(obj_useButton);
 }

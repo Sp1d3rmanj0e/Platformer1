@@ -32,8 +32,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "scenery",
+    "path": "folders/Objects/scenery.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_ground",

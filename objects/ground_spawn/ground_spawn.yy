@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "land gen",
+    "path": "folders/Objects/land gen.yy",
   },
   "resourceVersion": "1.0",
   "name": "ground_spawn",
