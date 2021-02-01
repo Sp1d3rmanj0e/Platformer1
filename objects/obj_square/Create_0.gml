@@ -1,5 +1,7 @@
 /// @description Setup
-
+globalvar droppedItemId, bcID;
+droppedItemId = 0;
+bcID = 0;
 initialx = x;
 initialy = y;
 
@@ -8,5 +10,4 @@ half_camera_height = camera_get_view_height(view_camera[0]) / 2;
 
 camera_set_view_pos(view_camera[0],x - half_camera_width, y - half_camera_height);
 
-jumps = 1;
 phy_fixed_rotation = true;

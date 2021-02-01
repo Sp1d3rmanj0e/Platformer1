@@ -1,15 +1,16 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_additem(grid,itemName,amount,description,sprite,newScript) {
+function scr_additem(grid,itemName,amount,description,sprite,newScript,maxStack) {
 completed = false;
 	//itemName = 0
 	//amount = 1
 	//description = 2
 	//sprite = 3
 	//newScript = 4
+	//maxStack = 5
 	//case 1 - Item is in inventory
 	for (i = 0;i < ds_grid_height(grid);i++) {
-		if (ds_grid_get(grid,0,i) == itemName) {
+		if (ds_grid_get(grid,0,i) == itemName) && (maxStack > ds_grid_get(grid,1,i) + amount) {
 			ds_grid_set(grid,1,i,ds_grid_get(grid,1,i) + amount);
 			completed = true;
 			return true; //bug checking

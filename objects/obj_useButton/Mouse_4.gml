@@ -1,4 +1,5 @@
 /// @description When Clicked
-
-script_execute(ds_grid_get(playerInventory,4,itemSelected));
-scr_trashItem();
+if (image_index != 2) {
+	script_execute(ds_grid_get(playerInventory,4,itemSelected));
+	scr_trashItem();
+}

@@ -12,11 +12,11 @@
   "physicsSensor": false,
   "physicsShape": 0,
   "physicsGroup": 1,
-  "physicsDensity": 0.5,
+  "physicsDensity": 2.0,
   "physicsRestitution": 0.1,
   "physicsLinearDamping": 0.0,
   "physicsAngularDamping": 0.0,
-  "physicsFriction": 1.0,
+  "physicsFriction": 2.0,
   "physicsStartAwake": true,
   "physicsKinematic": true,
   "physicsShapePoints": [

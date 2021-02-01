@@ -1,8 +1,12 @@
 /// @description Setting Up Variables
+// Adding test items
 /*
 scr_additem(playerInventory,"Test",4,"Test",0,"");
 scr_additem(playerInventory,"Test1",3,"Test",0,"");
 scr_additem(playerInventory,"Test2",2,"Test",0,"");
+scr_additem(playerInventory,"Test3",5,"Test",0,"");
+scr_additem(playerInventory,"Test4",6,"Test",0,"");
+scr_additem(playerInventory,"Test5",7,"Test",0,"");
 */
 textBorder = 5;
 myItems = playerInventory;

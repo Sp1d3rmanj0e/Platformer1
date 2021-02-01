@@ -39,4 +39,8 @@ function scr_trashItem(){
 			} //end if (ds_grid_height(playerInventory) > 1)
 		} //end else
 	} //end case 2
+	droppedItem = instance_create_layer(obj_square.phy_position_x,obj_square.phy_position_y - obj_square.sprite_height,"Instances",obj_droppedItem);
+	with (droppedItem) {
+		
+	}
 }

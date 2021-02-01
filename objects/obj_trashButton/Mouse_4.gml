@@ -1,3 +1,2 @@
 /// @description When Clicked
-
-scr_trashItem();
+if (holdCount < holdCountMax) scr_trashItem(); // if not held and clicked

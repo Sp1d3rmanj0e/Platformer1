@@ -1,4 +1,4 @@
-/// @description Setting Up Variables
+/// @description Setting Up Global Variables
 
 globalvar playerInventory,playerInventoryWidth;
 playerInventoryWidth = 5;

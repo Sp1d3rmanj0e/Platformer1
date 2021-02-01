@@ -91,3 +91,4 @@ amount = drop_quantity; //1
 description = desc; //2
 sprite = image_index; //3
 newScript = undefined; //4
+maxStack = max_stack; //5
