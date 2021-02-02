@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function scr_trashItem(){
+function scr_trashItem(waste){
 	//case 1 - only one item in inventory
 
 	if (ds_grid_height(playerInventory) == 2) { //if only one item in inventory
@@ -39,8 +39,5 @@ function scr_trashItem(){
 			} //end if (ds_grid_height(playerInventory) > 1)
 		} //end else
 	} //end case 2
-	droppedItem = instance_create_layer(obj_square.phy_position_x,obj_square.phy_position_y - obj_square.sprite_height,"Instances",obj_droppedItem);
-	with (droppedItem) {
-		
-	}
+	if (waste = 1) instance_create_layer(obj_square.phy_position_x,obj_square.phy_position_y - obj_square.sprite_height,"Instances",obj_droppedItem);
 }

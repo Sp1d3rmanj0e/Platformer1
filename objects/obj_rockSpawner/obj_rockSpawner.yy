@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_blockChecker",
-    "path": "sprites/spr_blockChecker/spr_blockChecker.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
@@ -21,8 +18,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_blockChecker","path":"objects/obj_blockChecker/obj_blockChecker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_blockChecker","path":"objects/obj_blockChecker/obj_blockChecker.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_rockSpawner","path":"objects/obj_rockSpawner/obj_rockSpawner.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_rockSpawner","path":"objects/obj_rockSpawner/obj_rockSpawner.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -31,7 +28,7 @@
     "path": "folders/Objects/scenery.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_blockChecker",
+  "name": "obj_rockSpawner",
   "tags": [],
   "resourceType": "GMObject",
 }

@@ -35,7 +35,7 @@ function scr_blocks() {
 			 block[1][8] = "Dirt";
 			 block[1][9] = "Dirty dirt dirt";
 		block[2][0] = 4; //Stone
-			 block[2][1] = 7;
+			 block[2][1] = 14;
 			 block[2][2] = 100;
 			 block[2][3] = 2;
 			 block[2][4] = 3;

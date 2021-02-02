@@ -9,12 +9,11 @@ if (phy_linear_velocity_y <= 0) {
 }
 	if (keyboard_check(ord("S"))) yy += 5;
 #region jumping
-//if (keyboard_check_pressed(ord("W"))) && (jumps > 0) && (vel_y == 0){
-//	physics_apply_impulse(xx,yy,0,-5);
-//	jumps --;}
-//vel_y = phy_linear_velocity_y; //Better name
-//if (!keyboard_check(ord("W"))) && (vel_y < 0) vel_y = max(vel_y,0);
-//if (place_meeting(xx,yy+1,grounds)) && (!keyboard_check(ord("W"))) jumps = 1;
+if (place_meeting(phy_position_x,phy_position_y,obj_ladder)) {
+	if (keyboard_check(ord("W"))) {
+		yy -= 1.5;
+	}
+}
 #endregion
 #endregion
 //phy_linear_velocity_y = vel_y; // if there's a problem, check here first

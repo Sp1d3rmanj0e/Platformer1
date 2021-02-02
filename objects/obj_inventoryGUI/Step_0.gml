@@ -9,9 +9,10 @@ if (ds_grid_get(myItems,0,1) != undefined) { //If Inventory is not empty
 	if (ds_grid_height(myItems) >= (floor((sprite_height-textBorder*3)) / 25)) { //items is larger than visible space
 		inventoryEndAt = floor((sprite_height-textBorder*3)) / 25;
 	}
+	initialGridHeight = ds_grid_height(myItems);
 }
 if (ds_grid_height(playerInventory) > 1) && (!instance_exists(obj_trashButton)) { //Makes buttons when needed
-	instance_create_layer(0, 0,"Top",obj_trashButton);
-	instance_create_layer(0, 0,"Top",obj_useButton);
+	instance_create_depth(0, 0,depth-1,obj_trashButton);
+	instance_create_depth(0, 0,depth-1,obj_useButton);
 	scr_scrolling(1);
 }

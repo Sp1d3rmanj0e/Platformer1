@@ -14,9 +14,9 @@ for (i = 1;i < inventoryEndAt;i++) {
 	inventoryOnScreen = i;
 	if (ds_grid_height(playerInventory) >= 2) {
 		if (i <= ds_grid_height(playerInventory)-1) {
-			draw_text(itemLeftStart - 55,itemTopStart+(i*20)-16,ds_grid_get(myItems,0,i + scrolledAmount)); //Name
+			draw_text(itemLeftStart - 65,itemTopStart+(i*20)-16,ds_grid_get(myItems,0,i + scrolledAmount)); //Name
 			draw_text(itemLeftStart,itemTopStart+(i*20)-16,ds_grid_get(myItems,1,i + scrolledAmount)); //Amount
-			draw_sprite(spr_materials,ds_grid_get(myItems,3,i + scrolledAmount),bbox_left + 40,itemTopStart + (i * 20) - 5); //Image
+			draw_sprite(spr_itemSprites,ds_grid_get(myItems,3,i + scrolledAmount),bbox_left + 40,itemTopStart + (i * 20) - 5); //Image
 			//draw_text(itemLeftStart + 50,itemTopStart+(i*20)-16,itemSelected); //for testing scroll
 		}
 	}

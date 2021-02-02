@@ -1,9 +1,8 @@
 /// @description Stuff
 
 #region shading
-if (distance_to_object(obj_square) > 16) { //further than mining distance
-		shade = 75 - distance_to_object(obj_square);
-		image_blend = make_color_rgb(shade,shade,shade);	
+if (scr_shader()) { //further than mining distance
+//scr_shader();	
 } else if (!position_meeting(mouse_x,mouse_y,id)) { //not touching mouse
 	image_blend = c_white;
 } else if (mouse_check_button(mb_left)) && (level_req > obj_pickaxe.level) { //touching but doesn't meet pick level
@@ -11,7 +10,6 @@ if (distance_to_object(obj_square) > 16) { //further than mining distance
 } else { //mining distance not selected
 	image_blend = make_color_rgb(119,136,153);
 }
-if (shade < 0) image_blend = c_black;
 #endregion
 //Check if mining
 if (image_blend = make_color_rgb(119,136,153)) && (mouse_check_button(mb_left)) && (alarm[0] <= 0) {
